@@ -1,0 +1,41 @@
+{% extends 'admin/index.html' %}
+{% block body %}
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body><form action="" method="get">
+<table  border="1" class="table table-bordered">
+  <tr>
+    <th>NO</th>
+    <th>NAME</th>
+    <th>PHONE</th>
+    <th>EMAIL</th>
+    <th>ADDRESS</th>
+    <th>PHOTO</th>
+    <th>PROOF</th>
+  </tr>
+{% for i in data %}
+  <tr>
+    <td>&nbsp;{{ forloop.counter}}</td>
+    <td>&nbsp;{{ i.name}}</td>
+    <td>{{ i.phone}}</td>
+    <td>{{ i.email}}</td>
+    <td>{{ i.place }}<br>{{ i.pin }}<br>{{ i.post }}</td>
+    <td>&nbsp;{{ i.photo }}</td>
+    <td>{{ i.proof }}</td>
+
+  </tr>
+    {% endfor %}
+</table>
+</form>
+</body>
+</html>
+
+{% endblock %}
+
+
