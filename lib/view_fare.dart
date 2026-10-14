@@ -65,7 +65,7 @@ class _driverviewfaresubState extends State<driverviewfaresub> {
             context, MaterialPageRoute(builder: (context) => driverhome()));
         }, icon: new Icon(Icons.arrow_back,color: Color(0xFFFF4A17),),),
         title: Text('Fare', style: TextStyle(color: Color(0xFFFF4A17))),
-        backgroundColor: Colors.black,
+        backgroundColor: Color(0xFFFFF0EB),
         elevation: 6,
         centerTitle: true,
         // backgroundColor:TColor.primary,

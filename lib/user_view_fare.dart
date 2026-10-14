@@ -15,6 +15,7 @@ class userviewfare extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: userviewfaresub(),
     );
   }
@@ -59,10 +60,10 @@ class _userviewfaresubState extends State<userviewfaresub> {
       appBar: AppBar(
         leading: IconButton(onPressed: () { Navigator.push(
             context, MaterialPageRoute(builder: (context) => userhome()));
-        }, icon: new Icon(Icons.arrow_back),),
+        }, icon: new Icon(Icons.arrow_back,color: Color(0xFFFF4A17),),),
         title: Text('Fare',
             style: TextStyle(color: Color(0xFFFF4A17))),
-        backgroundColor: Colors.black,
+        backgroundColor: Color(0xFFFFF0EB),
         elevation: 6,
         centerTitle: true,
 

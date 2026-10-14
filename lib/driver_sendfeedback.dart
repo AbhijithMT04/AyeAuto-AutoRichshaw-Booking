@@ -10,6 +10,13 @@ void main() {
 }
 
 class sendfeedback extends StatefulWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: sendfeedback(),
+    );
+  }
   sendfeedback_state createState() => sendfeedback_state();
 }
 
@@ -57,7 +64,7 @@ class sendfeedback_state extends State<sendfeedback> {
           'FEEDBACK',
           style: TextStyle(color: Color(0xFFFF4A17)),
         ),
-        backgroundColor: Colors.black,
+        backgroundColor: Color(0xFFFFF0EB),
         elevation: 6,
         centerTitle: true,
       ),

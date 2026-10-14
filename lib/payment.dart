@@ -14,6 +14,12 @@ void main() {
 
 class RazorpayPayment extends StatefulWidget {
   @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: RazorpayPayment(),
+    );
+  }
   _RazorpayPaymentState createState() => _RazorpayPaymentState();
 }
 
